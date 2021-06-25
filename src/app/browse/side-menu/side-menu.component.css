@@ -1,0 +1,49 @@
+:host {
+  --background-dark: rgb(56, 64, 72);
+}
+.side-menu {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0.6rem;
+  height: 100%;
+  width: auto;
+  background-color: var(--background-dark);
+}
+.list-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.list-menu .item-menu {
+  margin: 0.4rem 0;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+.list-menu .item-menu {
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.4rem 0;
+  padding: 0.6rem;
+}
+.list-menu .item-menu:hover,
+.list-menu .item-menu.selected {
+  background-color: rgb(63, 73, 83);
+  cursor: pointer;
+}
+.list-menu .item-menu ::ng-deep svg {
+  transition: all 0.5s ease-in-out;
+  fill: rgb(172, 182, 202);
+}
+.list-menu .item-menu:hover ::ng-deep svg,
+.list-menu .item-menu.selected {
+  fill: var(--purple);
+}
+.side-menu__bottom {
+  width: 100%;
+  padding: 0.4rem;
+}

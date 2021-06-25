@@ -1,0 +1,40 @@
+.chat-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.2rem;
+  cursor: pointer;
+  padding: 0.6rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.chat-item:hover {
+  background: rgb(56, 64, 72);
+}
+.chat-item room-user-image {
+  margin-right: 0.4rem;
+}
+.chat-item-information {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.name-user {
+  font-size: 0.9rem;
+  font-weight: 900;
+  color: white;
+}
+.info-last-message {
+  font-size: 80%;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.623);
+  white-space: nowrap;
+}
+.time {
+  font-size: x-small;
+  color: white;
+}
+.col {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+}

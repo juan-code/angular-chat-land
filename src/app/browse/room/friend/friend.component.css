@@ -1,0 +1,22 @@
+.friend-item {
+  position: relative;
+  overflow: hidden;
+  padding-top: 25%;
+}
+.container-img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: calc(50% - 20px);
+}
+
+.name {
+  display: block;
+  border-radius: 4px;
+  background: rgb(56, 64, 72);
+  text-align: center;
+  padding: calc(0.8rem + 12px) 1.2rem 0.4rem 1.2rem;
+  color: white;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,18 @@
+.view {
+  width: 100vw;
+  min-height: 100vh;
+  background: var(--background-dark);
+  display: block;
+  text-align: center;
+  padding: 10% 1rem;
+}
+.title-auth {
+  color: white;
+  margin-bottom: 2rem;
+  font-size: 20px;
+}
+@media screen and (min-width: 900px) {
+  .view {
+    padding: 90px;
+  }
+}

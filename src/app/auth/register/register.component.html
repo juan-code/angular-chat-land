@@ -1,0 +1,57 @@
+<div class="container-form">
+  <h2 class="text--sentence-case title">sign up</h2>
+  <p class="text--sentence-case subtitle">get your <span class="d-inline-block text--sentence-case">chat-land</span> account now.</p>
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit(registerForm)" class="form">
+    <div class="container-field" [class.container-field-error]="hasControlError('email')">
+      <label class="label-input">email</label>
+      <div class="input-container">
+        <div class="container-icon">
+          <icon-user-circle fill="white"></icon-user-circle>
+        </div>
+        <input type="email" formControlName="email" focus-input />
+      </div>
+      <div class="message-error" *ngFor="let error of getErrorsByControl('email')">
+        {{ getMessageError(error) }}
+      </div>
+    </div>
+    <div class="container-field" [class.container-field-error]="hasControlError('username')">
+      <label class="label-input">username</label>
+      <div class="input-container">
+        <div class="container-icon">
+          <icon-user-circle fill="white"></icon-user-circle>
+        </div>
+        <input type="text" formControlName="username" focus-input />
+      </div>
+      <div class="message-error" *ngFor="let error of getErrorsByControl('username')">
+        {{ getMessageError(error) }}
+      </div>
+    </div>
+    <div class="container-field" [class.container-field-error]="hasControlError('password')">
+      <label class="label-input">password</label>
+      <div class="input-container">
+        <div class="container-icon">
+          <icon-lock fill="white"></icon-lock>
+        </div>
+        <input type="password" formControlName="password" focus-input />
+      </div>
+      <div class="message-error" *ngFor="let error of getErrorsByControl('password')">
+        {{ getMessageError(error) }}
+      </div>
+    </div>
+    <div class="container-field" [class.container-field-error]="hasControlError('confirm')">
+      <label class="label-input">confirm password</label>
+      <div class="input-container">
+        <div class="container-icon">
+          <icon-lock fill="white"></icon-lock>
+        </div>
+        <input type="password" formControlName="confirm" focus-input />
+      </div>
+      <div class="message-error" *ngFor="let error of getErrorsByControl('confirm')">
+        {{ getMessageError(error) }}
+      </div>
+    </div>
+    <button type="submit" class="btn btn-block btn-purple text--sentence-case">sign up</button>
+  </form>
+  <p class="text--sentence-case text--signup">
+    already have an account? <a [routerLink]="['/signin']" class="link link--purple text--sentence-case">signin</a>
+</div>

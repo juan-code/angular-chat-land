@@ -1,0 +1,86 @@
+/* Add application styles & imports to this file! */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+:root {
+  --background-dark: rgb(48, 55, 64);
+  --purple: rgb(111, 109, 229);
+  --purpleDark: rgb(53, 52, 105);
+  --purpleLight: rgb(119, 118, 233);
+  --danger: rgb(222, 62, 68);
+  --active: rgb(102, 222, 171);
+  --inactive: red;
+  --blocked: black;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar-track {
+  border-radius: 4px;
+  background-color: transparent;
+}
+::-webkit-scrollbar {
+  height: 1px;
+  width: 1px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: var(--purple);
+}
+/* COMPONENTS */
+/* BUTTON */
+.btn {
+  padding: 0.8rem 1rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn:focus {
+  outline: none;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+}
+.btn-purple {
+  background: var(--purple);
+  color: white;
+  overflow: hidden;
+  border-radius: 6px;
+}
+.btn-purple:focus {
+  border-color: var(--purpleLight);
+  background: var(--purpleDark);
+}
+.btn-purple:active {
+  border-color: transparent;
+  background: var(--purpleDark);
+}
+.link {
+  display: inline-block;
+  cursor: pointer;
+}
+.link--purple {
+  color: var(--purple);
+}
+.link-white {
+  color: white;
+}
+/* UTILITIES */
+.text--white {
+  color: white;
+}
+.d-inline-block {
+  display: inline-block;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.text--sentence-case::first-letter {
+  text-transform: uppercase;
+}
+.text--capitalize {
+  text-transform: capitalize;
+}

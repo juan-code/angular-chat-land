@@ -1,0 +1,12 @@
+.head-chat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 1px solid darkgray;
+}
+.container-image {
+  display: inline-block;
+  width: 50px;
+}

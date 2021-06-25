@@ -1,0 +1,33 @@
+:host {
+  width: 100%;
+  height: 100%;
+}
+.room {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-areas: "column chat";
+  grid-template-columns: minmax(100px, 300px) 1fr;
+}
+.column-chats {
+  grid-area: column;
+}
+.talk-room {
+  background-color: rgba(39, 46, 52);
+  display: grid;
+  grid-template-areas:
+    "head"
+    "chat"
+    "keyboard";
+  grid-template-rows: auto 1fr auto;
+}
+.talk-room .head {
+  grid-area: head;
+}
+.talk-room .chat {
+  grid-area: chat;
+  overflow: auto;
+}
+.talk-room .keyboard {
+  grid-area: keyboard;
+}

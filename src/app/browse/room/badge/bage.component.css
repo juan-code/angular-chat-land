@@ -1,0 +1,16 @@
+.badge {
+  display: inline-flex;
+  font-size: 60%;
+  padding: 0.2rem 0.2rem;
+  border-radius: 50%;
+  margin: 0.2rem;
+  width: 16px;
+  height: 16px;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.badge.danger {
+  background: rgba(163, 25, 25, 0.575);
+  color: rgb(245, 49, 49);
+}

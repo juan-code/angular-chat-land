@@ -1,0 +1,26 @@
+.user-profile {
+  border-radius: 50%;
+  background-color: var(--purple);
+  width: 100%;
+  transition: all 0.3s ease;
+  color: white;
+  text-transform: uppercase;
+  user-select: none;
+  border: none;
+  overflow: hidden;
+  display: inline-block;
+}
+.container-profile-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.img-profile {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}

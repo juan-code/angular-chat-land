@@ -1,0 +1,39 @@
+<div class="container-form">
+	<h2 class="text--sentence-case title">sign in</h2>
+	<p class="text--sentence-case subtitle">sign in to continue to
+		<span class="d-inline-block text--sentence-case">chat-land</span> </p>
+	<form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm)" class="form">
+		<div class="container-field">
+			<label class="label-input">email</label>
+			<div class="input-container">
+				<div class="container-icon">
+					<icon-user-circle fill="white"></icon-user-circle>
+				</div>
+				<input type="email" formControlName="email" focus-input />
+      </div>
+				<div class="message-error" *ngFor="let error of getErrorsByControl('email')">
+					{{ getMessageError(error) }}
+				</div>
+			</div>
+			<div class="container-field">
+				<label class="label-input label-input-flex justify-content-between">
+          <span class="d-inline-block text--sentence-case">password</span>
+          <a [routerLink]="['/reset']" class="link link-white text--sentence-case">forgot password?</a>
+      </label>
+				<div class="input-container">
+					<div class="container-icon">
+						<icon-lock fill="white"></icon-lock>
+					</div>
+					<input type="password" formControlName="password" focus-input />
+      </div>
+					<div class="message-error" *ngFor="let error of getErrorsByControl('password')">
+						{{ getMessageError(error) }}
+					</div>
+				</div>
+				<button type="submit" class="btn btn-block btn-purple text--sentence-case">sign in</button>
+	</form>
+	<p class="text--sentence-case text--signup">
+		don't have an account? <a [routerLink]="['/signup']" class="link link--purple text--sentence-case">signup
+			now</a>
+	</p>
+</div>

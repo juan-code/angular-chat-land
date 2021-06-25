@@ -1,0 +1,16 @@
+.list-chats {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  max-height: 100%;
+  overflow: hiddeb;
+}
+.list-chats .title {
+  margin: 0.6rem 0;
+}
+.containers-chats {
+  display: block;
+  height: auto;
+  max-height: 100%;
+  overflow: auto;
+}
